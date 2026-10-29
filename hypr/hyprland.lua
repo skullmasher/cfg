@@ -52,6 +52,7 @@ hl.bind(super .. " + P", hl.dsp.window.pseudo())
 hl.bind(super .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind("Print", hl.dsp.exec_cmd(screenshot))
 hl.bind(super .. " + SHIFT + Page_Down", hl.dsp.exec_cmd(flux))
+hl.bind(super .. " + B", hl.dsp.exec_raw("killall -SIGUSR1 waybar"), { transparent = true })
 
 -- Move focus with super + arrow keys
 hl.bind(super .. " + left", hl.dsp.focus({ direction = "left" }))
