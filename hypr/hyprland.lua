@@ -51,6 +51,7 @@ hl.bind(super .. " + L", hl.dsp.exec_cmd(locker))
 hl.bind(super .. " + P", hl.dsp.window.pseudo())
 hl.bind(super .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind("Print", hl.dsp.exec_cmd(screenshot))
+hl.bind(super .. " + SHIFT + Page_Up", hl.dsp.exec_cmd("pkill hyprsunset"))
 hl.bind(super .. " + SHIFT + Page_Down", hl.dsp.exec_cmd(flux))
 hl.bind(super .. " + B", hl.dsp.exec_raw("killall -SIGUSR1 waybar"), { transparent = true })
 
